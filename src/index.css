@@ -1,13 +1,380 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #730e0e;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header-Logo {
+  width: 150px;
+  height: 80px;
+  /* object-fit: contain; */
 }
+
+.navbar {
+  background-color: #fcfcfc;
+  box-shadow: 0px 0px 20px 10px rgb(210, 209, 209);
+
+}
+a.nav-link {
+  /* background: antiquewhite; */
+  padding: 0;
+  margin: 0 20px;
+  font-size: 18px;
+}
+.a.nav-link a{
+  font-size: 58px !important;
+}
+
+/* Home component $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+.home-image {
+  width: 100%;
+  height: 500px;
+  object-fit: c;
+
+}
+
+.carousel-indicators [data-bs-target] {
+  display: none !important;
+}
+
+.crousel-heding h3 {
+  font-size: 52px;
+  color: rgb(168, 168, 168)
+}
+
+.crousel-heding p {
+  font-size: 32px;
+  color: rgb(138, 138, 138);
+}
+
+/* Footer Component@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+.footer {
+  background-color: #fcfcfc;
+  box-shadow: 0px 0px 20px 10px rgb(210, 209, 209);
+
+
+}
+
+.footer p {
+  padding: 30px;
+  text-align: center;
+  margin: 0;
+  color: black;
+  font-size: 18px;
+}
+
+.footer p:hover {
+  color: #1086ae;
+  font-weight: 500;
+}
+
+
+/* Service component########################## */
+.service-box {
+  background-color: rgb(243, 243, 243);
+}
+
+.service-heading {
+  padding: 40px;
+  text-align: center;
+  color: rgb(21 106 173);
+  background-color: rgb(243, 243, 243);
+
+}
+
+.service-heading:hover {
+  text-decoration: underline;
+}
+
+.service {
+  padding-bottom: 90px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  border: none !important;
+  transition: transform .7s;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 20px 10px rgb(210, 209, 209);
+  transform: scale(1.1);
+
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-button {
+  background-color: #1086ae !important;
+  border: 1px solid #1086ae !important;
+  text-align: center !important;
+  color: white;
+}
+
+.card-button:hover {
+  background-color: #ffffff !important;
+  border: 1px solid #1086ae !important;
+  text-align: center !important;
+  color: rgb(122, 121, 121) !important;
+  font-weight: 500;
+}
+
+.card-body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card-body p {
+  padding: 0 25px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  color: #1086ae;
+}
+
+.card-title.h5 {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  color: #1569ac;
+
+}
+
+/* About components****************** */
+
+.about {
+  display: flex;
+  width: 100%;
+  padding: 30px;
+  background-color: rgb(243, 243, 243);
+  align-items: center;
+}
+
+.about-image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image img {
+  width: 90%;
+  height: auto;
+  transition: transform .7s;
+  border-radius: 20px;
+}
+
+.about-image img:hover {
+  transform: scale(1.1);
+
+}
+
+.about-para {
+  width: 50%;
+  height: auto;
+  padding: 50px;
+}
+
+.about-para p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.9rem;
+  color: rgb(122, 121, 121);
+  transition: transform .7s;
+
+}
+
+.about-para p:hover {
+  text-shadow: 2px 2px 4px #c6c6c6;
+  /* font-size: 20px; */
+  color: rgb(67, 67, 67);
+
+  transform: scale(1.1);
+
+}
+
+.about-para h1 {
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.9rem;
+  padding: 40px;
+  text-align: center;
+  transition: transform .7s;
+
+  color: rgb(21 106 173);
+}
+a{
+  text-align: center !important;
+  font-weight: 700 !important;
+  line-height: 1.9rem !important;
+  text-align: center !important;
+  transition: transform .7s !important;
+
+  color: rgb(21 106 173) !important;
+  text-decoration: none !important;
+}
+
+.about-para h1:hover {
+  transform: scale(1.1);
+
+  text-decoration: underline;
+  transition: transform .7s;
+}
+
+/* Contact us ***^^^^^^^^^^^^^^^^^^ */
+.contact {
+  padding: 30px;
+  background-color: rgb(243, 243, 243);
+
+}
+
+.contact h1 {
+  padding: 40px;
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.9rem;
+  padding: 40px;
+  text-align: center;
+  transition: transform .7s;
+  color: rgb(21 106 173);
+}
+
+.contact h1:hover {
+  text-decoration: underline;
+  transform: scale(1.1);
+
+}
+
+.contact-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  width: 17rem;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  transition: transform .7s;
+
+}
+
+.box:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 20px 10px rgb(210, 209, 209);
+  border-radius: 10px;
+  background-color: white;
+}
+
+.box-image {
+  width: 100%;
+  /* background-color: #1569ac; */
+}
+
+.box-image img {
+  width: 50px;
+  height: auto;
+  padding: 10px;
+  color: white;
+  border-radius: 50px;
+  /* background-color: #1086ae; */
+  transition: transform .7s;
+}
+
+.box-image img:hover {
+  transform: scale(1.5);
+
+}
+
+.box h5 {
+  color: #1569ac;
+  font-size: 18px;
+  padding: 10px 0;
+  margin: 0;
+  transition: transform .7s;
+  font-weight: 600;
+}
+
+.box h5:hover {
+  transform: scale(1.1);
+  text-decoration: underline;
+}
+
+.box p {
+  color: rgb(122, 121, 121);
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  padding: 10px 15px;
+  transition: transform .7s;
+  text-align: center;
+}
+
+.box p:hover {
+  transform: scale(1.1);
+  text-shadow: 2px 2px 4px #c6c6c6;
+}
+
+
+
+.form-box{
+  width: 100%;
+  display: flex;
+  padding: 60px;
+}
+.form-left{
+  width: 50%;
+  padding: 0 80px;
+}
+.form-right{
+  width: 50%;
+  padding: 0 80px;
+
+}
+.submit-box{
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 40px;
+}
+.submit-button{
+  background-color: #1569ac !important;
+  width: 200px;
+  color: white !important;
+  padding: 10px !important;
+  border: 1px solid #1569ac !important;
+  border-radius: 30px !important;
+  transition: transform .15s;
+
+}
+.submit-button:hover{
+  color: #1086ae !important;
+  font-size: 16px !important;
+  font-weight: 800 !important;
+  background-color: white !important;
+  transform: scale(1.1) !important;
+}
+.form-control:focus{
+  box-shadow: none !important;
+}
+
+
+
+
+
+
+
+
